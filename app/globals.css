@@ -18,7 +18,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 24px);
   background: var(--paper);
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--header-height) + 24px);
 }
 
 body {
@@ -181,7 +186,7 @@ a {
 }
 
 .desktop-nav .nav-cta {
-  min-height: 40px;
+  min-height: 48px;
   padding: 0 14px;
   gap: 18px;
   border: 1px solid var(--ink);
@@ -773,11 +778,22 @@ a {
   font-size: 17px;
 }
 
-.contact .contact-note {
-  margin: 18px 0 0;
-  color: #8a8a8a;
+.contact-email {
+  display: flex;
+  width: fit-content;
+  min-height: 48px;
+  align-items: center;
+  margin-top: 14px;
+  color: var(--muted);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 9px;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.contact-email:hover {
+  color: var(--blue);
 }
 
 .site-footer {
@@ -813,7 +829,15 @@ a {
 }
 
 .footer-column a {
-  min-height: 30px;
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+}
+
+.footer-end a {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
 }
 
 .footer-column a:hover,

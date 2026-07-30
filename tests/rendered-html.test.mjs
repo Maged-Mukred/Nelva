@@ -67,5 +67,22 @@ test("renders accessible navigation and focused commercial scope", async () => {
   );
   assert.match(html, /Experience across the technology value chain\./);
   assert.match(html, /Broader Technology Markets/);
+  assert.match(
+    html,
+    /<section id="company" class="section credibility">/,
+  );
+  assert.doesNotMatch(
+    html,
+    /<section id="company" class="section section-dark problem">/,
+  );
+  assert.match(
+    html,
+    /href="mailto:contact@nelvaglobal\.com"[^>]*>[\s\S]*?contact@nelvaglobal\.com/,
+  );
+  assert.match(html, /Discuss your next market opportunity/);
+  assert.doesNotMatch(
+    html,
+    /Contact details will be added|Explore your next market opportunity|Structured commercial execution/,
+  );
   assert.doesNotMatch(html, /Security &amp; Access-Control Technology/);
 });

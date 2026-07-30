@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nelva | International Technology Market Development",
     description:
-      "Structured commercial execution for international technology markets.",
+      "International market development for technology manufacturers.",
     url: "https://nelvaglobal.com",
     siteName: "Nelva",
     locale: "en_US",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1734,
         height: 907,
-        alt: "Nelva — Structured commercial execution for international technology markets.",
+        alt: "Nelva — International market development for technology manufacturers.",
       },
     ],
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nelva | International Technology Market Development",
     description:
-      "Structured commercial execution for international technology markets.",
+      "International market development for technology manufacturers.",
     images: ["/og.png"],
   },
 };

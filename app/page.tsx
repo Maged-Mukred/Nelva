@@ -202,7 +202,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="company" className="section section-dark problem">
+        <section className="section section-dark problem">
           <div className="shell grid-12">
             <div className="section-aside">
               <span className="eyebrow light">01 / Market challenge</span>
@@ -337,7 +337,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section credibility">
+        <section id="company" className="section credibility">
           <div className="shell credibility-grid">
             <div className="credibility-label">
               <span className="eyebrow light">05 / International foundation</span>
@@ -374,16 +374,21 @@ export default function Home() {
             <div className="contact-main">
               <h2>Exploring a new market or reconsidering your current approach?</h2>
               <p>
-                Share your product, target market, or commercial objective.
-                Nelva can help clarify the relevant questions, potential entry
-                points, and a practical scope for further discussion.
+                Tell us about the market, partnership, or commercial
+                opportunity you would like to discuss.
               </p>
-              <a className="button button-blue" href="#contact">
-                Explore your next market opportunity <Arrow />
+              <a
+                className="button button-blue"
+                href="#contact"
+              >
+                Discuss your next market opportunity <Arrow />
               </a>
-              <p className="contact-note">
-                Contact details will be added when the official channel is confirmed.
-              </p>
+              <a
+                className="contact-email"
+                href="mailto:contact@nelvaglobal.com"
+              >
+                contact@nelvaglobal.com
+              </a>
             </div>
           </div>
         </section>
@@ -393,7 +398,7 @@ export default function Home() {
         <div className="shell footer-grid">
           <div>
             <a className="wordmark footer-wordmark" href="#top">NELVA</a>
-            <p>Structured commercial execution for international technology markets.</p>
+            <p>International market development for technology manufacturers.</p>
           </div>
           <div className="footer-column">
             <span className="footer-label">Navigate</span>
