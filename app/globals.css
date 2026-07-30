@@ -897,6 +897,11 @@ a {
     grid-column: 3 / -1;
   }
 
+  .stage-row {
+    grid-template-columns: 48px minmax(140px, 0.75fr) minmax(0, 1.25fr);
+    gap: 20px;
+  }
+
   .capability-grid {
     grid-template-columns: 1fr;
   }
