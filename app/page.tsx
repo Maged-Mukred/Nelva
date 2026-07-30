@@ -30,8 +30,8 @@ const stages = [
   },
   {
     number: "06",
-    title: "Progress",
-    text: "Maintain structured follow-up, communicate market feedback, monitor opportunities, and recommend practical next steps.",
+    title: "Advance",
+    text: "Maintain structured follow-up, communicate market feedback, and move qualified opportunities toward practical next steps.",
   },
 ];
 
@@ -45,13 +45,13 @@ const capabilities = [
   {
     number: "02",
     title: "Technology Sourcing & Commercial Coordination",
-    text: "Identification and preliminary evaluation of suitable technologies, manufacturers, suppliers, products, and production partners—supported by cross-border coordination of specifications, samples, offers, and early commercial discussions.",
+    text: "Identify and evaluate suitable technologies, manufacturers, suppliers, and production partners—then coordinate specifications, samples, offers, and early commercial discussions across borders.",
     note: "Particularly across Europe and Asia",
   },
   {
     number: "03",
     title: "Payment Technology Advisory & Integration Support",
-    text: "Advisory and coordination support for Android terminals, Smart POS, mPOS, attended devices, and unattended environments—from device selection and initial suitability assessment to samples, evaluations, and requirement coordination.",
+    text: "Support device selection, initial suitability assessment, requirements coordination, samples, evaluations, and communication between manufacturers, customers, and technical partners.",
     note: "Advisory and coordination focused",
   },
 ];
@@ -68,20 +68,17 @@ const markets = [
     text: "Related experience across POS environments, kiosks, vending, parking, transportation, and other unattended or self-service applications.",
   },
   {
-    title: "Security & Access-Control Technology",
-    tag: "Market capability",
-    text: "Relevant product exposure and market-development capability, focused on commercial access and partner coordination rather than installation or certification.",
+    title: "Broader Technology Markets",
+    tag: "Selected opportunities",
+    text: "Market-development support for adjacent B2B technology areas—including security, access control, network devices, and telecommunications—where relevant product fit and commercial access can be developed.",
   },
-  {
-    title: "Network & Telecommunications Technology",
-    tag: "Market capability",
-    text: "Relevant product exposure supporting the identification of suitable markets, customers, distribution channels, and technology partners.",
-  },
-  {
-    title: "Technology Manufacturing & Distribution",
-    tag: "Cross-market ecosystem",
-    text: "Commercial relationships connecting manufacturers, distributors, system integrators, solution providers, and technology buyers.",
-  },
+];
+
+const proofPoints = [
+  "Manufacturer representation",
+  "Distributor & integrator development",
+  "Technical-commercial coordination",
+  "Attended & unattended payment environments",
 ];
 
 function Arrow() {
@@ -133,6 +130,9 @@ export default function Home() {
             <a href="#capabilities">Capabilities</a>
             <a href="#industries">Industries</a>
             <a href="#contact">Contact</a>
+            <a className="nav-cta" href="#contact">
+              Start a conversation <Arrow />
+            </a>
           </nav>
 
           <button
@@ -177,14 +177,14 @@ export default function Home() {
           </div>
           <div className="hero-content">
             <h1>
-              Structured commercial execution for technology manufacturers
-              entering international markets.
+              International market development for technology manufacturers.
             </h1>
             <div className="hero-support">
               <p>
                 Nelva helps technology manufacturers assess markets, identify
-                qualified customers and partners, develop commercial
-                relationships, and coordinate progress across regions.
+                and qualify relevant customers and partners, develop
+                commercial relationships, and coordinate technical and
+                commercial opportunities internationally.
               </p>
               <div className="hero-actions">
                 <a className="button button-dark" href="#contact">
@@ -218,12 +218,10 @@ export default function Home() {
                   and commercial offers can all create valuable opportunities.
                 </p>
                 <p>
-                  Their impact is stronger when supported by relevant market
-                  intelligence, suitable targets, careful partner selection,
-                  and consistent follow-up. Nelva connects individual
-                  activities to a defined commercial objective—helping
-                  technology companies make better-informed decisions before
-                  substantial time and resources are committed.
+                  Their impact is stronger when guided by relevant market
+                  intelligence, suitable targets, careful qualification, and
+                  consistent follow-up. Nelva connects these activities to a
+                  clear commercial objective.
                 </p>
               </div>
             </div>
@@ -240,8 +238,8 @@ export default function Home() {
               <div className="section-heading">
                 <h2>A structured process shaped around the market objective.</h2>
                 <p>
-                  The exact scope depends on the client’s product, priorities,
-                  target markets, and agreed engagement.
+                  Engagements may cover selected stages or a broader programme,
+                  with scope and responsibilities agreed for each assignment.
                 </p>
               </div>
               <ol className="stage-list">
@@ -254,8 +252,7 @@ export default function Home() {
                 ))}
               </ol>
               <p className="scope-note">
-                Not every engagement includes every stage. Nelva does not
-                guarantee sales, contracts, or successful market entry.
+                The process adapts to the product, market objective, and agreed scope.
               </p>
             </div>
           </div>
@@ -286,12 +283,23 @@ export default function Home() {
                 </article>
               ))}
             </div>
-            <p className="capability-boundary">
-              Payment technology support is advisory and coordination focused.
-              Nelva does not independently develop payment software, perform
-              complete integrations, or conduct official certification and
-              testing.
-            </p>
+          </div>
+        </section>
+
+        <section className="proof-strip" aria-labelledby="proof-title">
+          <div className="shell proof-grid">
+            <div>
+              <span className="eyebrow">Practical foundation</span>
+              <h2 id="proof-title">Experience across the technology value chain.</h2>
+            </div>
+            <ul>
+              {proofPoints.map((point, index) => (
+                <li key={point}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  {point}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
@@ -305,11 +313,10 @@ export default function Home() {
             </div>
             <div className="section-main">
               <div className="section-heading">
-                <h2>Experience across connected technology ecosystems.</h2>
+                <h2>Focused experience across connected technology markets.</h2>
                 <p>
-                  Nelva supports market development where technical products,
-                  commercial channels, and international partnerships must be
-                  understood together.
+                  Supporting manufacturers, distributors, system integrators,
+                  and technology partners across selected markets.
                 </p>
               </div>
               <div className="market-list">
@@ -347,16 +354,15 @@ export default function Home() {
               </p>
               <p className="international-copy">
                 Based in Espoo, Finland, Nelva supports international
-                technology business development across Europe, the Middle
-                East, Africa, China, and other selected markets where relevant
-                opportunities can be developed.
+                technology business development, with experience and
+                professional relationships across Europe, the Middle East,
+                Africa, and China.
               </p>
               <div className="region-line" aria-label="Relevant international markets">
                 <span>Europe</span>
                 <span>Middle East</span>
                 <span>Africa</span>
                 <span>China</span>
-                <span>Selected markets</span>
               </div>
             </div>
           </div>
@@ -372,7 +378,7 @@ export default function Home() {
                 Nelva can help clarify the relevant questions, potential entry
                 points, and a practical scope for further discussion.
               </p>
-              <a className="button button-blue" href="#top">
+              <a className="button button-blue" href="#contact">
                 Explore your next market opportunity <Arrow />
               </a>
               <p className="contact-note">

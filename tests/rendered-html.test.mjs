@@ -34,7 +34,7 @@ test("server-renders the Nelva homepage", async () => {
   );
   assert.match(
     html,
-    /Structured commercial execution for technology manufacturers entering international markets\./,
+    /International market development for technology manufacturers\./,
   );
   assert.match(html, /International Market &amp; Sales Development/);
   assert.match(html, /Technology Sourcing &amp; Commercial Coordination/);
@@ -50,7 +50,7 @@ test("server-renders the Nelva homepage", async () => {
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 
-test("renders accessible navigation and engagement boundaries", async () => {
+test("renders accessible navigation and focused commercial scope", async () => {
   const response = await render();
   const html = await response.text();
 
@@ -59,10 +59,13 @@ test("renders accessible navigation and engagement boundaries", async () => {
   assert.match(html, /aria-controls="mobile-menu"/);
   assert.match(
     html,
-    /Not every engagement includes every stage\. Nelva does not guarantee sales, contracts, or successful market entry\./,
+    /Engagements may cover selected stages or a broader programme/,
   );
   assert.match(
     html,
-    /Nelva does not independently develop payment software, perform complete integrations, or conduct official certification and testing\./,
+    /Support device selection, initial suitability assessment, requirements coordination/,
   );
+  assert.match(html, /Experience across the technology value chain\./);
+  assert.match(html, /Broader Technology Markets/);
+  assert.doesNotMatch(html, /Security &amp; Access-Control Technology/);
 });
