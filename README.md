@@ -38,7 +38,10 @@ Built with React, TypeScript, vinext, and the OpenAI Sites deployment runtime.
 
 ## Corporate information
 
-**Nelva**  
-Espoo, Finland  
-Business ID: 3574517-6  
+**Nelva**
+
+Espoo, Finland
+
+Business ID: 3574517-6
+
 [nelvaglobal.com](https://nelvaglobal.com)
