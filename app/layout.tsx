@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://nelvaglobal.com"),
   title: "Nelva | International Technology Market Development",
   description:
-    "Nelva supports technology manufacturers with structured international market development, commercial intelligence, sales development, sourcing, and payment technology expertise.",
+    "Nelva supports technology manufacturers with international market development, manufacturer representation, qualification, and technical and commercial coordination.",
   openGraph: {
     title: "Nelva | International Technology Market Development",
     description:
