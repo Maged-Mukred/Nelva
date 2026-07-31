@@ -34,7 +34,7 @@ pnpm run build
 pnpm test
 ```
 
-Built with React, TypeScript, vinext, and the OpenAI Sites deployment runtime.
+Built with Next.js, React, and TypeScript for production deployment on Vercel.
 
 ## Corporate information
 

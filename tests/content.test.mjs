@@ -1,0 +1,80 @@
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import test from "node:test";
+
+const pagePaths = {
+  home: "app/page.tsx",
+  company: "app/company/page.tsx",
+  capabilities: "app/capabilities/page.tsx",
+  industries: "app/industries/page.tsx",
+  contact: "app/contact/page.tsx",
+};
+
+async function page(name) {
+  return readFile(new URL(`../${pagePaths[name]}`, import.meta.url), "utf8");
+}
+
+test("preserves the approved Homepage positioning and routes", async () => {
+  const source = await page("home");
+  assert.match(source, /International market development for technology manufacturers/);
+  assert.match(source, /Based in Espoo, Finland/);
+  assert.match(source, /Manufacturer Representation/);
+  assert.match(source, /Technical & Commercial Coordination/);
+  assert.match(source, /Payment Technology represents Nelva/);
+  assert.match(source, /Business ID: 3574517-6/);
+
+  for (const route of ["/company", "/capabilities", "/industries", "/contact"]) {
+    assert.match(source, new RegExp(`href=["']${route}["']`));
+  }
+
+  for (const stage of ["Assess", "Identify", "Qualify", "Develop", "Coordinate", "Advance"]) {
+    assert.match(source, new RegExp(`["]${stage}["]`));
+  }
+});
+
+test("preserves the approved capability boundaries", async () => {
+  const source = await page("capabilities");
+  assert.match(source, /Connected capabilities for international technology market development/);
+  assert.match(source, /Manufacturer Representation/);
+  assert.match(source, /Current capability/);
+  assert.match(source, /does not automatically imply exclusivity/);
+  assert.match(source, /does not perform complete technical integrations/);
+  assert.match(source, /does not guarantee sales, contracts, or successful market entry/);
+});
+
+test("preserves the approved Industries positioning", async () => {
+  const source = await page("industries");
+  assert.match(source, /One market-development framework/);
+  assert.match(source, /structured market intelligence/);
+  assert.match(source, /Payment Technology is Nelva/);
+  assert.match(source, /Android payment terminals/);
+  assert.match(source, /Selected adjacent opportunities/);
+  assert.match(source, /not in supplying databases or generic leads/);
+  assert.match(source, /does not claim to manufacture, install, integrate, certify, or maintain/);
+});
+
+test("preserves the Company foundation and founder information", async () => {
+  const source = await page("company");
+  assert.match(source, /specialized international market development company/i);
+  assert.match(source, /A new business built on more than ten years of professional experience/);
+  assert.match(source, /The business itself has not operated for more than ten years/);
+  assert.match(source, /Maged Mukred/);
+  assert.match(source, /Founder &amp; International Market Development Lead/);
+  assert.match(source, /Relevance before volume/);
+});
+
+test("preserves the Contact page without unverified channels", async () => {
+  const source = await page("contact");
+  assert.match(source, /Start with the market objective/);
+  assert.match(source, /Confidential information is not required/);
+  assert.match(source, /Business ID: 3574517-6/);
+  assert.match(source, /verified business channel will be published here/i);
+  assert.doesNotMatch(source, /mailto:|contact@nelvaglobal\.com|<form/i);
+});
+
+test("contains no unsupported public claims across website pages", async () => {
+  const sources = await Promise.all(Object.keys(pagePaths).map(page));
+  const combined = sources.join("\n");
+  assert.doesNotMatch(combined, /engineering company|engineering solutions|engineering partner/i);
+  assert.doesNotMatch(combined, /our team|headquarters|managing director|guaranteed results/i);
+});
