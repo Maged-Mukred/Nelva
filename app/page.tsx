@@ -153,10 +153,10 @@ export default function Home() {
 
           <div className="hero-copy">
             <p>
-              Nelva helps technology manufacturers assess relevant markets,
-              identify and qualify potential customers and partners, develop
-              commercial relationships, and coordinate technical and commercial
-              opportunities.
+               Nelva helps payment and technology manufacturers assess a market,
+  identify and qualify the right commercial channels, and develop
+  credible opportunities before committing to a distributor, local
+  hire, or wider market-entry investment.
             </p>
             <div className="hero-actions">
               <a className="button button-dark" href="/contact">
