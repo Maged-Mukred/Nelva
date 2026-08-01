@@ -6,7 +6,7 @@ import Link from "next/link";
 const capabilityGateways = [
   {
     number: "01",
-    title: "Market & Channel Readiness Assessmen",
+    title: "Market & Channel Readiness Assessment",
     text: "Assess the product, target-market objective, commercial assumptions, possible channel types, qualification criteria, and realistic next steps.",
   },
   {
@@ -16,24 +16,32 @@ const capabilityGateways = [
   },
   {
     number: "03",
-    title: "Commercial Relationship Development & Manufacturer Representation"F,
-    text: "Develop relevant relationships and represent a manufacturer’s commercial interests within an agreed market and scope.",
+    title:
+      "Commercial Relationship Development & Manufacturer Representation",
+    text: "Develop relevant relationships and represent a manufacturer’s commercial interests within an agreed market and separately agreed scope.",
     featured: true,
   },
   {
     number: "04",
     title: "Technical & Commercial Coordination",
-    text: "Connect manufacturers with market participants, support discussions, coordinate agreed information, and maintain follow-up around qualified opportunities.",
+    text: "Connect manufacturers with relevant market participants, coordinate agreed technical and commercial information, and maintain follow-up around qualified opportunities.",
   },
 ];
 
-const stages = ["Assess", "Identify", "Qualify", "Develop", "Coordinate", "Advance"];
+const stages = [
+  "Assess",
+  "Identify",
+  "Qualify",
+  "Develop",
+  "Coordinate",
+  "Advance",
+];
 
 const focusAreas = [
   "Android payment terminals",
-  "Attended environments",
-  "Unattended environments",
-  "Manufacturer representation",
+  "Smart POS and mPOS",
+  "Attended payment environments",
+  "Unattended payment environments",
 ];
 
 function Arrow() {
@@ -50,11 +58,15 @@ export default function Home() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
+
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setMenuOpen(false);
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+      }
     };
 
     onScroll();
+
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("keydown", onKeyDown);
 
@@ -66,6 +78,7 @@ export default function Home() {
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
+
     return () => {
       document.body.style.overflow = "";
     };
@@ -88,8 +101,9 @@ export default function Home() {
             <a href="/capabilities">Capabilities</a>
             <a href="/industries">Industries</a>
             <a href="/contact">Contact</a>
+
             <a className="header-cta" href="/contact">
-              Discuss Market & Channel Readiness <Arrow />
+              Discuss Market &amp; Channel Readiness <Arrow />
             </a>
           </nav>
 
@@ -102,6 +116,7 @@ export default function Home() {
             onClick={() => setMenuOpen((current) => !current)}
           >
             <span>{menuOpen ? "Close" : "Menu"}</span>
+
             <span className="menu-symbol" aria-hidden="true">
               {menuOpen ? "×" : "+"}
             </span>
@@ -120,16 +135,26 @@ export default function Home() {
               ["Industries", "/industries"],
               ["Contact", "/contact"],
             ].map(([label, href], index) => (
-              <a href={href} key={label} onClick={() => setMenuOpen(false)}>
+              <a
+                href={href}
+                key={label}
+                onClick={() => setMenuOpen(false)}
+              >
                 <span className="mobile-nav-index">0{index + 1}</span>
                 <span>{label}</span>
                 <Arrow />
               </a>
             ))}
-            <a className="mobile-primary-cta" href="/contact" onClick={() => setMenuOpen(false)}>
-              Discuss your market objectives <Arrow />
+
+            <a
+              className="mobile-primary-cta"
+              href="/contact"
+              onClick={() => setMenuOpen(false)}
+            >
+              Discuss Market &amp; Channel Readiness <Arrow />
             </a>
           </nav>
+
           <div className="shell mobile-menu-meta">
             <span>Espoo, Finland</span>
             <span>Business ID 3574517-6</span>
@@ -148,20 +173,25 @@ export default function Home() {
           </div>
 
           <div className="hero-title-wrap">
-            <h1 id="hero-title">Make better market and channel decisions before committing to market entry.</h1>
+            <h1 id="hero-title">
+              Make better market and channel decisions before committing to
+              market entry.
+            </h1>
           </div>
 
           <div className="hero-copy">
             <p>
-               Nelva helps payment and technology manufacturers assess a market,
-  identify and qualify the right commercial channels, and develop
-  credible opportunities before committing to a distributor, local
-  hire, or wider market-entry investment.
+              Nelva helps payment and technology manufacturers assess a market,
+              identify and qualify the right commercial channels, and develop
+              credible opportunities before committing to a distributor, local
+              hire, or wider market-entry investment.
             </p>
+
             <div className="hero-actions">
               <a className="button button-dark" href="/contact">
-                Discuss your market objectives <Arrow />
+                Discuss Market &amp; Channel Readiness <Arrow />
               </a>
+
               <a className="text-link" href="/capabilities">
                 Explore our capabilities <Arrow />
               </a>
@@ -176,49 +206,73 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="challenge section-dark" aria-labelledby="challenge-title">
+        <section
+          className="challenge section-dark"
+          aria-labelledby="challenge-title"
+        >
           <div className="shell grid-12">
             <div className="section-index light">
               <span>01</span>
               <span>Market challenge</span>
             </div>
+
             <div className="section-content">
-              <h2 id="challenge-title">Early interest is not enough to justify a market-entry commitment.</h2>
+              <h2 id="challenge-title">
+                Early interest is not enough to justify a market-entry
+                commitment.
+              </h2>
+
               <div className="challenge-copy">
                 <p className="lead">
-                  A list of companies, early interest, or potential channels does not
-  by itself establish a credible market opportunity.
+                  A list of companies, early interest, or potential channels
+                  does not by itself establish a credible market opportunity.
                 </p>
+
                 <div>
                   <p>
-                    The challenge is determining which customers, distributors, and
-  commercial partners are genuinely relevant before committing time,
-  resources, or market-entry investment.
+                    The challenge is determining which customers, distributors,
+                    and commercial partners are genuinely relevant before
+                    committing time, resources, or market-entry investment.
                   </p>
+
                   <p className="challenge-close">
-                     Nelva brings assessment, qualification, relationship development, and
-  follow-up together around credible commercial next steps.
+                    Nelva brings assessment, qualification, commercial
+                    relationship development, and opportunity follow-up
+                    together around credible next steps.
                   </p>
                 </div>
               </div>
-              <a className="text-link text-link-light" href="/capabilities">
+
+              <a
+                className="text-link text-link-light"
+                href="/capabilities"
+              >
                 Explore how Nelva works <Arrow />
               </a>
             </div>
           </div>
         </section>
 
-        <section className="capabilities section-space" aria-labelledby="capabilities-title">
+        <section
+          className="capabilities section-space"
+          aria-labelledby="capabilities-title"
+        >
           <div className="shell">
             <div className="section-header grid-12">
               <div className="section-index">
                 <span>02</span>
                 <span>Capabilities</span>
               </div>
+
               <div className="section-content heading-pair">
-                <h2 id="capabilities-title">Begin with Market &amp; Channel Readiness.</h2>
+                <h2 id="capabilities-title">
+                  Begin with Market &amp; Channel Readiness.
+                </h2>
+
                 <p>
-                 Clarify the product, target market, channel assumptions, qualification   criteria, and realistic next steps before a larger commercial commitment.
+                  Clarify the product, target market, channel assumptions,
+                  qualification criteria, and realistic next steps before a
+                  larger commercial commitment.
                 </p>
               </div>
             </div>
@@ -226,14 +280,22 @@ export default function Home() {
             <div className="capability-list">
               {capabilityGateways.map((capability) => (
                 <a
-                  className={`capability-row ${capability.featured ? "is-featured" : ""}`}
+                  className={`capability-row ${
+                    capability.featured ? "is-featured" : ""
+                  }`}
                   href="/capabilities"
                   key={capability.number}
                 >
-                  <span className="capability-number">{capability.number}</span>
+                  <span className="capability-number">
+                    {capability.number}
+                  </span>
+
                   <h3>{capability.title}</h3>
                   <p>{capability.text}</p>
-                  <span className="capability-arrow"><Arrow /></span>
+
+                  <span className="capability-arrow">
+                    <Arrow />
+                  </span>
                 </a>
               ))}
             </div>
@@ -246,17 +308,27 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="process section-soft" aria-labelledby="process-title">
+        <section
+          className="process section-soft"
+          aria-labelledby="process-title"
+        >
           <div className="shell section-space">
             <div className="section-header grid-12">
               <div className="section-index">
                 <span>03</span>
                 <span>Operating method</span>
               </div>
+
               <div className="section-content heading-pair">
-                <h2 id="process-title">A clear path from market understanding to practical next steps.</h2>
+                <h2 id="process-title">
+                  A disciplined path from market assessment to qualified
+                  commercial progress.
+                </h2>
+
                 <p>
-                  An engagement may involve selected stages or a broader agreed scope.
+                  Each engagement follows an agreed scope, using the stages
+                  needed to assess the market, qualify relevant parties, and
+                  advance credible opportunities.
                 </p>
               </div>
             </div>
@@ -272,28 +344,42 @@ export default function Home() {
             </ol>
 
             <div className="process-note">
-              <span>Scope principle</span>
+              <span>Commercial boundary</span>
+
               <p>
-                The process supports informed commercial activity. It does not
-                guarantee sales, contracts, partner suitability, or successful market entry.
+                The method supports informed commercial decisions and qualified
+                opportunity development. It does not guarantee sales,
+                contracts, partner suitability, or successful market entry.
               </p>
+
               <a className="text-link" href="/capabilities">
-                Explore the working process <Arrow />
+                Explore the operating method <Arrow />
               </a>
             </div>
           </div>
         </section>
 
-        <section className="industries section-space" aria-labelledby="industries-title">
+        <section
+          className="industries section-space"
+          aria-labelledby="industries-title"
+        >
           <div className="shell">
             <div className="section-header grid-12">
               <div className="section-index">
                 <span>04</span>
                 <span>Industry experience</span>
               </div>
+
               <div className="section-content heading-pair">
-                <h2 id="industries-title">Focused experience in connected technology markets.</h2>
-                <p>Payment Technology represents Nelva’s strongest specialist area.</p>
+                <h2 id="industries-title">
+                  Specialist experience led by Payment Technology.
+                </h2>
+
+                <p>
+                  Payment Technology is Nelva’s strongest specialist area,
+                  supported by related retail and self-service experience and
+                  selected adjacent opportunities.
+                </p>
               </div>
             </div>
 
@@ -301,41 +387,69 @@ export default function Home() {
               <article className="industry-primary">
                 <div className="industry-topline">
                   <span>01 / Strongest specialist area</span>
-                  <span className="industry-mark" aria-hidden="true">P</span>
+                  <span className="industry-mark" aria-hidden="true">
+                    P
+                  </span>
                 </div>
+
                 <div className="industry-primary-copy">
                   <h3>Payment Technology</h3>
+
                   <p>
                     Nelva’s deepest relevant professional experience is in
-                    payment technology, including Android payment terminals and
-                    attended and unattended payment environments.
+                    payment technology, including Android payment terminals,
+                    Smart POS and mPOS, and attended and unattended payment
+                    environments.
                   </p>
+
                   <ul>
-                    {focusAreas.map((area) => <li key={area}>{area}</li>)}
+                    {focusAreas.map((area) => (
+                      <li key={area}>{area}</li>
+                    ))}
                   </ul>
                 </div>
-                <a href="/industries">Explore payment technology <Arrow /></a>
+
+                <a href="/industries">
+                  Explore payment technology <Arrow />
+                </a>
               </article>
 
               <div className="industry-secondary-group">
                 <article className="industry-secondary">
-                  <span className="industry-label">02 / Related practical experience</span>
+                  <span className="industry-label">
+                    02 / Related practical experience
+                  </span>
+
                   <h3>Retail &amp; Self-Service Technology</h3>
+
                   <p>
                     Relevant experience across retail, point-of-sale, and
                     self-service environments where manufacturers depend on
-                    suitable channels and effective technical and commercial communication.
+                    suitable channels and effective technical and commercial
+                    communication.
                   </p>
-                  <a href="/industries">Explore this area <Arrow /></a>
+
+                  <a href="/industries">
+                    Explore this area <Arrow />
+                  </a>
                 </article>
+
                 <article className="industry-adjacent">
-                  <span className="industry-label">03 / Selected adjacent opportunities</span>
+                  <span className="industry-label">
+                    03 / Selected adjacent opportunities
+                  </span>
+
                   <h3>Broader Technology Markets</h3>
+
                   <p>
-                    Considered where the product, objective, and available
-                    experience provide a credible basis to contribute.
+                    Considered selectively where the product, objective, and
+                    available experience provide a credible basis for Nelva to
+                    contribute.
                   </p>
-                  <a href="/industries">View industry scope <Arrow /></a>
+
+                  <a href="/industries">
+                    View industry scope <Arrow />
+                  </a>
                 </article>
               </div>
             </div>
@@ -349,48 +463,66 @@ export default function Home() {
                 <span>05</span>
                 <span>Company</span>
               </div>
+
               <div className="foundation-coordinate" aria-hidden="true">
                 <span>60.2055° N</span>
                 <span>24.6559° E</span>
               </div>
             </div>
+
             <div className="foundation-content">
-              <h2 id="foundation-title">A new Finnish company built on established professional experience.</h2>
+              <h2 id="foundation-title">
+                A new Finnish specialist firm built on established professional
+                experience.
+              </h2>
+
               <p className="foundation-lead">
-                Nelva is a newly established company based in Espoo, Finland.
-                It is built on the founder’s more than ten years of relevant
-                professional experience in international technology markets.
+                Nelva is based in Espoo, Finland, and is built on the founder’s
+                more than ten years of relevant professional experience in
+                international technology markets.
               </p>
+
               <p>
-                This experience includes payment and self-service technology,
+                That experience includes payment and self-service technology,
                 Android payment terminals, manufacturer representation,
                 distributor and system-integrator development, and technical
-                and commercial support.
+                and commercial coordination.
               </p>
-              <a className="text-link text-link-light" href="/company">
+
+              <a
+                className="text-link text-link-light"
+                href="/company"
+              >
                 Learn about Nelva <Arrow />
               </a>
             </div>
           </div>
         </section>
 
-        <section className="contact-cta section-space" aria-labelledby="contact-title">
+        <section
+          className="contact-cta section-space"
+          aria-labelledby="contact-title"
+        >
           <div className="shell grid-12">
             <div className="section-index">
               <span>06</span>
-              <span>Start a conversation</span>
+              <span>Commercial conversation</span>
             </div>
+
             <div className="section-content contact-content">
-              <h2 id="contact-title">Discuss your next market opportunity.</h2>
+              <h2 id="contact-title">
+                Discuss a Market &amp; Channel Readiness Assessment.
+              </h2>
+
               <div className="contact-copy-row">
                 <p>
-                  Whether you are a manufacturer considering market development
-                  or representation, or a distributor or system integrator
-                  seeking international commercial support, begin by telling
-                  Nelva about your objective.
+                  Tell Nelva about your product, target market, current
+                  commercial situation, and the type of support you are
+                  considering.
                 </p>
+
                 <a className="button button-blue" href="/contact">
-                  Start a conversation <Arrow />
+                  Request an initial commercial briefing <Arrow />
                 </a>
               </div>
             </div>
@@ -401,11 +533,19 @@ export default function Home() {
       <footer className="site-footer">
         <div className="shell footer-grid">
           <div className="footer-brand">
-            <Link className="wordmark footer-wordmark" href="/" aria-label="Nelva home">
+            <Link
+              className="wordmark footer-wordmark"
+              href="/"
+              aria-label="Nelva home"
+            >
               <Wordmark />
             </Link>
-            <p>International market development for technology manufacturers.</p>
+
+            <p>
+              International market development for technology manufacturers.
+            </p>
           </div>
+
           <nav className="footer-column" aria-label="Footer navigation">
             <span className="footer-label">Navigate</span>
             <a href="/company">Company</a>
@@ -413,6 +553,7 @@ export default function Home() {
             <a href="/industries">Industries</a>
             <a href="/contact">Contact</a>
           </nav>
+
           <div className="footer-column">
             <span className="footer-label">Corporate</span>
             <span>Nelva</span>
@@ -420,6 +561,7 @@ export default function Home() {
             <span>Business ID: 3574517-6</span>
             <span>nelvaglobal.com</span>
           </div>
+
           <div className="footer-end">
             <span>© 2026 Nelva</span>
             <a href="#main">Back to top ↑</a>
