@@ -970,4 +970,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .contact-page-hero {
     min-height: 760px;
   }
+
+  .cap-page-intro p,
+  .company-hero-grid > div p,
+  .industries-hero-copy > p:first-child,
+  .contact-page-grid p {
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 1.55;
+  }
 }
