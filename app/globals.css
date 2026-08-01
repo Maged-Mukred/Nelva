@@ -748,7 +748,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .finland-copy > p:not(.eyebrow) { max-width: 760px; margin-top: 48px; font-size: 18px; line-height: 1.65; }
 .finland-copy > p + p { padding-top: 25px; border-top: 1px solid rgba(255,255,255,.28); }
 .experience-grid { display: grid; grid-template-columns: 7fr 4fr; gap: var(--gutter); }
-.experience-grid h2 { max-width: 930px; font-size: clamp(55px, 6vw, 95px); line-height: .94; letter-spacing: -.058em; font-weight: 470; }
+.experience-grid h2 {
+  max-width: 760px;
+  font-size: clamp(38px, 3.8vw, 58px);
+  line-height: 1.04;
+  letter-spacing: -.04em;
+  font-weight: 470;
+}
 .experience-grid > div > p { max-width: 620px; margin-top: 45px; color: var(--muted); font-size: 17px; line-height: 1.6; }
 .experience-fields { border-top: 1px solid var(--line); }
 .experience-fields span { display: block; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
