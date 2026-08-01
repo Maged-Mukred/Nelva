@@ -148,7 +148,7 @@ export default function Home() {
           </div>
 
           <div className="hero-title-wrap">
-            <h1 id="hero-title">International market development for technology manufacturers.</h1>
+            <h1 id="hero-title">Make better market and channel decisions before committing to market entry.</h1>
           </div>
 
           <div className="hero-copy">
