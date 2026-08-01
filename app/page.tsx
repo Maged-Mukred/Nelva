@@ -196,7 +196,8 @@ export default function Home() {
   resources, or market-entry investment.
                   </p>
                   <p className="challenge-close">
-                    Nelva helps connect these activities to a clear commercial objective.
+                     Nelva brings assessment, qualification, relationship development, and
+  follow-up together around credible commercial next steps.
                   </p>
                 </div>
               </div>
