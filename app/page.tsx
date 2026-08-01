@@ -103,7 +103,7 @@ export default function Home() {
             <a href="/contact">Contact</a>
 
             <a className="header-cta" href="/contact">
-              Discuss Market &amp; Channel Readiness <Arrow />
+              Request an initial commercial briefing <Arrow />
             </a>
           </nav>
 
@@ -151,7 +151,7 @@ export default function Home() {
               href="/contact"
               onClick={() => setMenuOpen(false)}
             >
-              Discuss Market &amp; Channel Readiness <Arrow />
+              Request an initial commercial briefing <Arrow />
             </a>
           </nav>
 
