@@ -216,7 +216,7 @@ export default function Home() {
                 <span>Capabilities</span>
               </div>
               <div className="section-content heading-pair">
-                <h2 id="capabilities-title">Practical support across the market-development process.</h2>
+                <h2 id="capabilities-title">Begin with Market &amp; Channel Readiness.</h2>
                 <p>
                   Four connected capability areas, shaped around the agreed market objective.
                 </p>
