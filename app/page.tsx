@@ -251,7 +251,7 @@ export default function Home() {
             <div className="section-header grid-12">
               <div className="section-index">
                 <span>03</span>
-                <span>Working process</span>
+                <span>Operating method</span>
               </div>
               <div className="section-content heading-pair">
                 <h2 id="process-title">A clear path from market understanding to practical next steps.</h2>
