@@ -89,7 +89,7 @@ export default function Home() {
             <a href="/industries">Industries</a>
             <a href="/contact">Contact</a>
             <a className="header-cta" href="/contact">
-              Discuss your market objectives <Arrow />
+              Discuss Market & Channel Readiness <Arrow />
             </a>
           </nav>
 
