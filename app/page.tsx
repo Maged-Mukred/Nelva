@@ -218,7 +218,7 @@ export default function Home() {
               <div className="section-content heading-pair">
                 <h2 id="capabilities-title">Begin with Market &amp; Channel Readiness.</h2>
                 <p>
-                  Four connected capability areas, shaped around the agreed market objective.
+                 Clarify the product, target market, channel assumptions, qualification   criteria, and realistic next steps before a larger commercial commitment.
                 </p>
               </div>
             </div>
