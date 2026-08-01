@@ -186,15 +186,14 @@ export default function Home() {
               <h2 id="challenge-title">Early interest is not enough to justify a market-entry commitment.</h2>
               <div className="challenge-copy">
                 <p className="lead">
-                  Technology manufacturers may encounter many companies,
-                  contacts, and potential channels.
+                  A list of companies, early interest, or potential channels does not
+  by itself establish a credible market opportunity.
                 </p>
                 <div>
                   <p>
-                    The challenge is identifying the right market participants,
-                    distinguishing realistic opportunities from general interest,
-                    communicating product value clearly, and maintaining follow-up
-                    between the parties involved.
+                    The challenge is determining which customers, distributors, and
+  commercial partners are genuinely relevant before committing time,
+  resources, or market-entry investment.
                   </p>
                   <p className="challenge-close">
                     Nelva helps connect these activities to a clear commercial objective.
