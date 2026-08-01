@@ -7,7 +7,7 @@ const capabilityGateways = [
   {
     number: "01",
     title: "Market & Channel Readiness Assessmen",
-    text: "Assess the commercial context and identify relevant customers, distributors, system integrators, payment service providers, and other market participants.",
+    text: "Assess the product, target-market objective, commercial assumptions, possible channel types, qualification criteria, and realistic next steps.",
   },
   {
     number: "02",
@@ -16,7 +16,7 @@ const capabilityGateways = [
   },
   {
     number: "03",
-    title: "Commercial Relationship Development & Manufacturer Representation",
+    title: "Commercial Relationship Development & Manufacturer Representation"F,
     text: "Develop relevant relationships and represent a manufacturer’s commercial interests within an agreed market and scope.",
     featured: true,
   },
