@@ -952,3 +952,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .adjacent-copy { grid-template-columns: 1fr; gap: 28px; }
   .ecosystem-rows article { grid-template-columns: 1fr; gap: 17px; }
 }
+/* Unified desktop display scale */
+@media (min-width: 761px) {
+  .hero h1,
+  .cap-page-hero h1,
+  .company-hero h1,
+  .industries-hero h1,
+  .contact-page-grid h1 {
+    font-size: clamp(58px, 6vw, 94px);
+    line-height: 0.96;
+    letter-spacing: -0.055em;
+    font-weight: 440;
+  }
+}
