@@ -183,7 +183,7 @@ export default function Home() {
               <span>Market challenge</span>
             </div>
             <div className="section-content">
-              <h2 id="challenge-title">Finding interest is not the same as developing a market.</h2>
+              <h2 id="challenge-title">Early interest is not enough to justify a market-entry commitment.</h2>
               <div className="challenge-copy">
                 <p className="lead">
                   Technology manufacturers may encounter many companies,
