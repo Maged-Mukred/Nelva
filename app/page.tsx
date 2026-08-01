@@ -6,7 +6,7 @@ import Link from "next/link";
 const capabilityGateways = [
   {
     number: "01",
-    title: "Market Assessment and Target Identification",
+    title: "Market & Channel Readiness Assessmen",
     text: "Assess the commercial context and identify relevant customers, distributors, system integrators, payment service providers, and other market participants.",
   },
   {
