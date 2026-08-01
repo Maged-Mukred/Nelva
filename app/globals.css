@@ -976,6 +976,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .industries-hero-copy > p:first-child,
   .contact-page-grid p {
     max-width: 620px;
+    color: var(--muted);
     font-size: 18px;
     line-height: 1.55;
   }
