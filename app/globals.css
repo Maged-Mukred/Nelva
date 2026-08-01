@@ -953,8 +953,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .ecosystem-rows article { grid-template-columns: 1fr; gap: 17px; }
 }
 @media (min-width: 761px) {
-  .hero h1,
-  .cap-page-hero h1,
+   .cap-page-hero h1,
   .company-hero h1,
   .industries-hero h1,
   .contact-page-grid h1 {
