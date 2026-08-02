@@ -299,9 +299,10 @@ export default function CapabilitiesPage() {
         </section>
 
         <section
-          className="representation section-space"
-          aria-labelledby="representation-title"
-        >
+  id="manufacturer-representation"
+  className="representation section-space"
+  aria-labelledby="representation-title"
+>
           <div className="shell representation-grid">
             <div className="representation-label">
               <span>04</span>
