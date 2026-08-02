@@ -995,3 +995,11 @@ max-width: 760px;
     line-height: 1.55;
   }
 }
+@media (min-width: 761px) {
+  .contact-prepare .heading-pair h2 {
+    max-width: 760px;
+    font-size: clamp(38px, 3.8vw, 58px);
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+  }
+}
