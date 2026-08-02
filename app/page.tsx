@@ -451,9 +451,9 @@ export default function Home() {
                     contribute.
                   </p>
 
-                  <a href="/industries">
-                    View industry scope <Arrow />
-                  </a>
+                <a href="/industries#broader-technology-markets">
+  View industry scope <Arrow />
+</a>
                 </article>
               </div>
             </div>
