@@ -268,7 +268,7 @@ export default function CapabilitiesPage() {
 
               <div className="research-sequence">
                 {readinessCapabilities.map((item) => (
-                  <article className="research-step" key={item.number}>
+                  <articleid={item.id}className="research-step"key={item.number}>
                     <div className="research-step-heading">
                       <span>{item.number}</span>
                       <h3>{item.title}</h3>
