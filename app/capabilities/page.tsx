@@ -65,6 +65,7 @@ const readinessCapabilities = [
   },
   {
     number: "03",
+    id: "customer-partner-qualification",
     title: "Customer & Partner Qualification",
     headline:
       "Distinguish credible commercial fit from general market interest.",
