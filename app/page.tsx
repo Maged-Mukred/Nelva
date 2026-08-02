@@ -198,12 +198,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-proof" aria-label="Relevant experience">
-            <span className="hero-proof-label">Relevant foundation</span>
-            <span>Payment technology</span>
-            <span>Manufacturer representation</span>
-            <span>Technical &amp; commercial coordination</span>
-          </div>
+          <div className="hero-proof" aria-label="Payment Technology specialist experience">
+  <span className="hero-proof-label">Specialist proof</span>
+  <span>Payment Technology specialist</span>
+  <span>Android payment terminals</span>
+  <span>Attended &amp; unattended environments</span>
+</div>
         </section>
 
         <section
