@@ -346,9 +346,10 @@ export default function IndustriesPage() {
         </section>
 
         <section
-          className="retail-sector section-space"
-          aria-labelledby="retail-title"
-        >
+  id="retail-self-service"
+  className="retail-sector section-space"
+  aria-labelledby="retail-title"
+>
           <div className="shell grid-12">
             <div className="section-index">
               <span>02</span>
