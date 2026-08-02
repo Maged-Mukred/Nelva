@@ -433,9 +433,9 @@ export default function Home() {
                     communication.
                   </p>
 
-                  <a href="/industries">
-                    Explore this area <Arrow />
-                  </a>
+                  <a href="/industries#retail-self-service">
+  Explore this area <Arrow />
+</a>
                 </article>
 
                 <article className="industry-adjacent">
