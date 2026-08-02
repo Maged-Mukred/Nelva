@@ -275,9 +275,10 @@ export default function IndustriesPage() {
         </section>
 
         <section
-          className="payment-sector section-space"
-          aria-labelledby="payment-title"
-        >
+  id="payment-technology"
+  className="payment-sector section-space"
+  aria-labelledby="payment-title"
+>
           <div className="shell payment-sector-grid">
             <div className="payment-sector-side">
               <span>01</span>
