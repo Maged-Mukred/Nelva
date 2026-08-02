@@ -26,10 +26,11 @@ const capabilityGateways = [
   featured: true,
 },
   {
-    number: "04",
-    title: "Technical & Commercial Coordination",
-    text: "Connect manufacturers with relevant market participants, coordinate agreed technical and commercial information, and maintain follow-up around qualified opportunities.",
-  },
+  number: "04",
+  title: "Technical & Commercial Coordination",
+  text: "Connect manufacturers with relevant market participants, coordinate agreed technical and commercial information, and maintain follow-up around qualified opportunities.",
+  href: "/capabilities#technical-commercial-coordination",
+},
 ];
 
 const stages = [
