@@ -815,7 +815,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .official-label { padding-right: 35px; border-right: 1px solid rgba(255,255,255,.3); display: flex; flex-direction: column; gap: 9px; color: rgba(255,255,255,.72); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
 .official-label strong { margin-top: auto; color: rgba(255,255,255,.15); font-size: clamp(61px, 7vw, 110px); line-height: .76; letter-spacing: -.08em; }
 .official-content { padding-left: clamp(40px, 6vw, 105px); }
-.official-content h2 { max-width: 1050px; margin-top: 43px; font-size: clamp(57px, 6.2vw, 100px); line-height: .94; letter-spacing: -.06em; font-weight: 470; }
+.official-content h2 { max-width: 800px; margin-top: 43px; font-size: clamp(40px, 4vw, 62px); line-height: 1.02; letter-spacing: -.04em; font-weight: 470; }
 .official-content > p:not(.eyebrow) { max-width: 700px; margin-top: 45px; color: rgba(255,255,255,.82); font-size: 17px; line-height: 1.65; }
 .corporate-card { display: grid; grid-template-columns: 2fr 2fr 3fr; gap: var(--gutter); margin-top: 60px; padding: 27px; border: 1px solid rgba(255,255,255,.4); }
 .corporate-card span { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
