@@ -284,7 +284,7 @@ export default function Home() {
                   className={`capability-row ${
                     capability.featured ? "is-featured" : ""
                   }`}
-                  href="/capabilities"
+                  href={capability.href ?? "/capabilities"}
                   key={capability.number}
                 >
                   <span className="capability-number">
