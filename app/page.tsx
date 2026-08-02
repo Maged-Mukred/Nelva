@@ -5,9 +5,10 @@ import Link from "next/link";
 
 const capabilityGateways = [
   {
-    number: "01",
-    title: "Market & Channel Readiness Assessment",
-    text: "Assess the product, target-market objective, commercial assumptions, possible channel types, qualification criteria, and realistic next steps.",
+   number: "01",
+  title: "Market & Channel Readiness Assessment",
+  text: "Assess the product, target-market objective, commercial assumptions, possible channel types, qualification criteria, and realistic next steps.",
+  href: "/capabilities#capability-sequence",
   },
   {
     number: "02",
