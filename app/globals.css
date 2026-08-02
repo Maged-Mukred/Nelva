@@ -568,7 +568,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .industry-primary li:nth-child(even) { padding-left: 0; }
   .industry-secondary-group { grid-template-columns: 1fr; }
   .industry-secondary, .industry-adjacent { min-height: 390px; padding: 28px 0; border-right: 0; border-bottom: 1px solid var(--line); }
-  ..industry-adjacent { margin-inline: 0; padding-inline: 16px; max-width: 100%; }
+  .industry-adjacent { margin-inline: 0; padding-inline: 16px; max-width: 100%; }
 
   .foundation-grid { display: block; min-height: 0; }
   .foundation-aside { min-height: 160px; padding: 50px 0 26px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.28); flex-direction: row; align-items: flex-end; }
