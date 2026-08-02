@@ -744,7 +744,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .finland-aside { padding-right: 38px; border-right: 1px solid rgba(255,255,255,.32); display: flex; flex-direction: column; justify-content: space-between; color: rgba(255,255,255,.72); font-size: 11px; }
 .finland-aside strong { color: rgba(255,255,255,.15); font-size: clamp(67px, 8vw, 128px); line-height: .76; letter-spacing: -.08em; }
 .finland-copy { padding-left: clamp(40px, 6vw, 105px); }
-.finland-copy h2 { max-width: 900px; margin-top: 45px; font-size: clamp(59px, 6.5vw, 102px); line-height: .93; letter-spacing: -.06em; font-weight: 470; }
+.finland-copy h2 {
+  max-width: 820px;
+  margin-top: 45px;
+  font-size: clamp(40px, 4vw, 62px);
+  line-height: 1.02;
+  letter-spacing: -.04em;
+  font-weight: 470;
+}
 .finland-copy > p:not(.eyebrow) { max-width: 760px; margin-top: 48px; font-size: 18px; line-height: 1.65; }
 .finland-copy > p + p { padding-top: 25px; border-top: 1px solid rgba(255,255,255,.28); }
 .experience-grid { display: grid; grid-template-columns: 7fr 4fr; gap: var(--gutter); }
