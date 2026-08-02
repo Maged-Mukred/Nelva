@@ -443,7 +443,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* Contact */
 .contact-cta { background: var(--white); }
-.contact-content h2 { max-width: 1080px; font-size: clamp(58px, 7vw, 106px); }
+.contact-content h2 { max-width: 820px; font-size: clamp(40px, 4vw, 62px); line-height: 1.02; letter-spacing: -.04em; }
 .contact-copy-row { display: grid; grid-template-columns: 1fr auto; gap: 70px; align-items: end; margin-top: 78px; padding-top: 28px; border-top: 1px solid var(--ink); }
 .contact-copy-row p { max-width: 650px; margin: 0; color: var(--muted); font-size: 17px; }
 
@@ -789,7 +789,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .boundary-grid > div:first-child span { color: var(--blue); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
 .boundary-grid > div:first-child strong { font-size: 32px; line-height: 1.08; font-weight: 500; }
 .boundary-grid > div:last-child { padding-left: clamp(40px, 6vw, 105px); }
-.boundary-grid h2 { max-width: 900px; font-size: clamp(54px, 6vw, 93px); line-height: .94; letter-spacing: -.058em; font-weight: 470; }
+.boundary-grid h2 { max-width: 760px; font-size: clamp(38px, 3.8vw, 58px); line-height: 1.04; letter-spacing: -.04em; font-weight: 470; }
 .boundary-grid p { max-width: 760px; margin-top: 46px; font-size: 17px; line-height: 1.65; }
 
 /* Contact page */
