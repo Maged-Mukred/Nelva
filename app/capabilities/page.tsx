@@ -356,9 +356,10 @@ export default function CapabilitiesPage() {
         </section>
 
         <section
-          className="cap-connection section-space"
-          aria-labelledby="connection-title"
-        >
+  id="technical-commercial-coordination"
+  className="cap-connection section-space"
+  aria-labelledby="connection-title"
+>
           <div className="shell grid-12">
             <div className="section-index">
               <span>05—06</span>
