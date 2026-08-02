@@ -740,7 +740,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .purpose-statement span { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
 .purpose-statement p { max-width: 880px; font-size: 27px; line-height: 1.28; }
 .finland-foundation { background: var(--blue); color: var(--white); }
-.finland-grid { display: grid; grid-template-columns: 4fr 8fr; min-height: 720px; }
+.finland-grid {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  min-height: 640px;
+}
 .finland-aside { padding-right: 38px; border-right: 1px solid rgba(255,255,255,.32); display: flex; flex-direction: column; justify-content: space-between; color: rgba(255,255,255,.72); font-size: 11px; }
 .finland-aside strong { color: rgba(255,255,255,.15); font-size: clamp(67px, 8vw, 128px); line-height: .76; letter-spacing: -.08em; }
 .finland-copy { padding-left: clamp(40px, 6vw, 105px); }
