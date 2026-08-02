@@ -804,7 +804,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .briefing-list span { align-self: start; color: var(--blue); font-size: 10px; }
 .briefing-list strong { max-width: 390px; font-size: 21px; font-weight: 500; }
 .enquiry-types { background: var(--soft); }
-.enquiry-types h2 { max-width: 900px; font-size: clamp(58px, 6vw, 96px); line-height: .94; letter-spacing: -.06em; font-weight: 470; }
+.enquiry-types h2 { max-width: 760px; font-size: clamp(38px, 3.8vw, 58px); line-height: 1.04; letter-spacing: -.04em; font-weight: 470; }
 .enquiry-grid { display: grid; grid-template-columns: repeat(2, 1fr); margin-top: 75px; border-top: 1px solid var(--line); }
 .enquiry-grid span { min-height: 90px; padding: 20px 0; border-bottom: 1px solid var(--line); display: flex; align-items: flex-end; font-size: 18px; }
 .enquiry-grid span:nth-child(odd) { padding-right: 30px; border-right: 1px solid var(--line); }
