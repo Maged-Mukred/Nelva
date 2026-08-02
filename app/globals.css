@@ -1003,3 +1003,11 @@ max-width: 760px;
     letter-spacing: -0.04em;
   }
 }
+@media (min-width: 761px) {
+  .operating-principles .heading-pair h2 {
+    max-width: 820px;
+    font-size: clamp(40px, 4vw, 62px);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+  }
+}
