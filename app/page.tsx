@@ -245,9 +245,9 @@ export default function Home() {
 
               <a
                 className="text-link text-link-light"
-                href="/capabilities"
-              >
-                Explore how Nelva works <Arrow />
+  href="/capabilities#operating-method"
+>
+  Explore how Nelva works <Arrow />
               </a>
             </div>
           </div>
