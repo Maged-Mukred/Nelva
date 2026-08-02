@@ -413,9 +413,9 @@ export default function Home() {
                   </ul>
                 </div>
 
-                <a href="/industries">
-                  Explore payment technology <Arrow />
-                </a>
+               <a href="/industries#payment-technology">
+  Explore payment technology <Arrow />
+</a>
               </article>
 
               <div className="industry-secondary-group">
