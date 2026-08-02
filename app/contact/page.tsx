@@ -258,15 +258,21 @@ export default function ContactPage() {
             <div className="official-content">
               <p className="eyebrow">Business enquiries</p>
 
-              <h2 id="official-title">
-                Verified business contact details will be published here.
-              </h2>
+             <h2 id="official-title">
+  Request an initial commercial briefing.
+</h2>
 
-              <p>
-                Nelva will publish its official contact address only after the
-                mailbox has been created and externally tested. No unverified
-                email address or non-functional enquiry form is shown.
-              </p>
+<p>
+  Send a short, non-confidential introduction outlining your company,
+  product, target market, and the commercial support being considered.
+</p>
+
+<a
+  className="contact-email-cta"
+  href="mailto:partnerships@nelvaglobal.com?subject=Initial%20commercial%20briefing"
+>
+  partnerships@nelvaglobal.com <Arrow />
+</a>
 
               <div className="corporate-card">
                 <span>Corporate information</span>
