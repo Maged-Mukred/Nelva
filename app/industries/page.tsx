@@ -401,10 +401,11 @@ export default function IndustriesPage() {
           </div>
         </section>
 
-        <section
-          className="adjacent-markets section-space"
-          aria-labelledby="adjacent-title"
-        >
+       <section
+  id="broader-technology-markets"
+  className="adjacent-markets section-space"
+  aria-labelledby="adjacent-title"
+>
           <div className="shell adjacent-grid">
             <div className="adjacent-index">
               <span>03</span>
