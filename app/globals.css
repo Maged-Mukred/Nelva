@@ -621,7 +621,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .cap-boundary { display: grid; grid-template-columns: 2fr 7fr; gap: var(--gutter); margin-top: 28px; padding: 24px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.6; }
 .cap-boundary span { color: var(--blue); text-transform: uppercase; letter-spacing: .1em; font-size: 10px; }
 
-.representation { background: var(--blue); color: var(--white); }
+.representation { background: var(--blue); color: var(--white); scroll-margin-top: var(--header-height); }
 .representation-grid { display: grid; grid-template-columns: 3fr 9fr; min-height: 950px; }
 .representation-label { padding-right: 28px; border-right: 1px solid rgba(255,255,255,.32); display: flex; flex-direction: column; gap: 10px; color: rgba(255,255,255,.72); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
 .representation-marker { margin-top: auto; font-size: clamp(90px, 12vw, 190px); line-height: .72; letter-spacing: -.08em; color: rgba(255,255,255,.14); }
