@@ -497,8 +497,9 @@ export default function CapabilitiesPage() {
         </section>
 
         <section
-          className="cap-process section-space"
-          aria-labelledby="cap-process-title"
+           id="operating-method"
+  className="cap-process section-space"
+  aria-labelledby="cap-process-title"
         >
           <div className="shell grid-12">
             <div className="section-index">
