@@ -11,10 +11,12 @@ const capabilityGateways = [
   href: "/capabilities#capability-sequence",
   },
   {
-    number: "02",
-    title: "Customer and Partner Qualification",
-    text: "Evaluate potential organisations according to product relevance, market role, commercial capability, and realistic opportunity.",
-  },
+    {
+  number: "02",
+  title: "Customer and Partner Qualification",
+  text: "Evaluate potential organisations according to product relevance, market role, commercial capability, and realistic opportunity.",
+  href: "/capabilities#customer-partner-qualification",
+},
   {
     number: "03",
     title:
