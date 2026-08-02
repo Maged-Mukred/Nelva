@@ -18,12 +18,13 @@ const capabilityGateways = [
   href: "/capabilities#customer-partner-qualification",
 },
   {
-    number: "03",
-    title:
-      "Commercial Relationship Development & Manufacturer Representation",
-    text: "Develop relevant relationships and represent a manufacturer’s commercial interests within an agreed market and separately agreed scope.",
-    featured: true,
-  },
+  number: "03",
+  title:
+    "Commercial Relationship Development & Manufacturer Representation",
+  text: "Develop relevant relationships and represent a manufacturer’s commercial interests within an agreed market and separately agreed scope.",
+  href: "/capabilities#manufacturer-representation",
+  featured: true,
+},
   {
     number: "04",
     title: "Technical & Commercial Coordination",
