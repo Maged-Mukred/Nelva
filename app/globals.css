@@ -660,7 +660,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .follow-note strong { margin-top: auto; font-size: 30px; line-height: 1.12; font-weight: 500; }
 .follow-note p { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); line-height: 1.55; }
 
-.client-context { background: var(--soft); }
+.client-context { background: var(--soft); } .client-context.section-space { padding-top: 88px; }
 .client-context-grid { display: grid; grid-template-columns: 4fr 8fr; }
 .client-context-label { min-height: 590px; padding-right: 40px; border-right: 1px solid var(--line); display: flex; flex-direction: column; justify-content: space-between; }
 .client-context-label span { color: var(--blue); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
