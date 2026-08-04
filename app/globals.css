@@ -886,7 +886,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .industries-hero-meta i { display: inline-block; }
 .industries-hero-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--gutter); padding-top: 68px; }
 .industries-hero h1 { grid-column: 1 / span 10; max-width: 1310px; font-size: clamp(67px, 7.3vw, 120px); line-height: .91; letter-spacing: -.067em; font-weight: 470; }
-.industries-hero-copy { grid-column: 7 / -1; margin-top: 70px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 44px; }
+.industries-hero-copy { grid-column: 7 / -1; margin-top: 32px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 44px; }
 .industries-hero-copy > p:first-child { font-size: 20px; line-height: 1.55; }
 .industries-hero-copy .depth-note { padding-left: 22px; border-left: 2px solid var(--blue); color: var(--muted); font-size: 13px; line-height: 1.6; }
 .industries-hero-axis { display: grid; grid-template-columns: auto 1fr auto; gap: 20px; align-items: center; margin-top: auto; padding: 25px 0; border-top: 1px solid var(--line); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
