@@ -34,7 +34,7 @@ test("preserves the approved Homepage positioning and routes", async () => {
 
 test("preserves the approved capability boundaries", async () => {
   const source = await page("capabilities");
-  assert.match(source, /Connected capabilities for international technology market development/);
+  assert.match(source, /Capabilities for better market and channel decisions/);
   assert.match(source, /Manufacturer Representation/);
   assert.match(source, /Current capability/);
   assert.match(source, /does not automatically imply exclusivity/);
