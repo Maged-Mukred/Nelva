@@ -57,7 +57,7 @@ test("preserves the Company foundation and founder information", async () => {
   const source = await page("company");
   assert.match(source, /A specialist company for better market and channel decisions\./);
   assert.match(source, /A new business built on more than ten years of relevant professional experience/);
-  assert.match(source, /The business itself has not operated for more than ten years/);
+  assert.match(source, /The business itself has not\s+operated for more than ten years/);
   assert.match(source, /Maged Mukred/);
   assert.match(source, /Founder &amp; International Market Development Lead/);
   assert.match(source, /Relevance before volume/);
