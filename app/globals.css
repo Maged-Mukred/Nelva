@@ -114,7 +114,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 /* Header */
 .site-header {
   position: fixed;
-  z-index: 100;
+  z-index: 300;
   inset: 0 0 auto;
   height: var(--header-height);
   border-bottom: 1px solid transparent;
