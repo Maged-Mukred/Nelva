@@ -229,7 +229,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-location::before { content: "/"; padding-right: 11px; color: #9ca0a4; }
 
 .hero-title-wrap {
-  grid-column: 1 / span 11;
+  grid-column: 1 / span 10;
   align-self: center;
   padding-top: clamp(52px, 7vh, 92px);
 }
