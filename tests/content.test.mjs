@@ -20,7 +20,7 @@ test("preserves the approved Homepage positioning and routes", async () => {
   assert.match(source, /Based in Espoo, Finland/);
   assert.match(source, /Manufacturer Representation/);
   assert.match(source, /Technical & Commercial Coordination/);
-  assert.match( source, /strongest specialist experience\s+in Payment Technology/ );
+  assert.match( source, /Payment Technology is Nelva’s strongest specialist area/ );
   assert.match(source, /Business ID: 3574517-6/);
 
   for (const route of ["/company", "/capabilities", "/industries", "/contact"]) {
@@ -46,10 +46,10 @@ test("preserves the approved Industries positioning", async () => {
   const source = await page("industries");
   assert.match(source, /The sector changes\. The commercial discipline remains\./);
   assert.match(source, /Professional databases,\s+public business information/);
-  assert.match( source, /strongest specialist experience\s+in Payment Technology/ );
+  assert.match( source, /Payment Technology is Nelva’s strongest specialist area/ );
   assert.match(source, /Android payment terminals/);
   assert.match(source, /Selected adjacent opportunities/);
-  assert.match(source, /not in supplying databases or generic leads/);
+  assert.match( source, /not\s+in supplying generic databases or contact lists/ );
   assert.match(source, /does not claim to manufacture, install, integrate, certify, or maintain/);
 });
 
