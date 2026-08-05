@@ -316,7 +316,7 @@ background-image: linear-gradient(to right, transparent calc(100% - 1px), rgba(1
 /* Market challenge */
 .challenge { padding-block: clamp(120px, 11vw, 180px); }
 .challenge .section-content { max-width: 1050px; }
-.challenge h2 { color: var(--white); }
+.challenge h2 { max-width: 900px; color: var(--white); }
 
 .challenge-copy {
   display: grid;
@@ -333,15 +333,15 @@ background-image: linear-gradient(to right, transparent calc(100% - 1px), rgba(1
 .challenge .text-link { margin-top: 55px; }
 
 /* Capabilities */
-.capability-list { margin-top: 86px; border-top: 1px solid var(--ink); }
+.capability-list { margin-top: 70px; border-top: 1px solid var(--ink); }
 
 .capability-row {
   display: grid;
   grid-template-columns: 64px minmax(260px, 1fr) minmax(300px, .85fr) 30px;
   gap: 28px;
   align-items: center;
-  min-height: 168px;
-  padding: 28px 0;
+  min-height: 148px;
+  padding: 24px 0;
   border-bottom: 1px solid var(--line);
   transition: padding 180ms ease, background 180ms ease, color 180ms ease;
 }
@@ -370,7 +370,7 @@ background-image: linear-gradient(to right, transparent calc(100% - 1px), rgba(1
 .process-track {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  margin: 94px 0 0;
+  margin: 72px 0 0;
   padding: 0;
   list-style: none;
   border-top: 1px solid var(--ink);
