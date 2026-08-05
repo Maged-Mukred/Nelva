@@ -45,7 +45,7 @@ test("preserves the approved capability boundaries", async () => {
 test("preserves the approved Industries positioning", async () => {
   const source = await page("industries");
   assert.match(source, /The sector changes\. The commercial discipline remains\./);
-  assert.match(source, /structured market intelligence/);
+  assert.match(source, /Professional databases,\s+public business information/);
   assert.match(source, /Payment Technology is Nelva/);
   assert.match(source, /Android payment terminals/);
   assert.match(source, /Selected adjacent opportunities/);
@@ -56,7 +56,7 @@ test("preserves the approved Industries positioning", async () => {
 test("preserves the Company foundation and founder information", async () => {
   const source = await page("company");
   assert.match(source, /A specialist company for better market and channel decisions\./);
-  assert.match(source, /A new business built on more than ten years of relevant professional experience/);
+  assert.match(   source,   /A new business built on more than ten years of relevant\s+professional experience/ );
   assert.match(source, /The business itself has not\s+operated for more than ten years/);
   assert.match(source, /Maged Mukred/);
   assert.match(source, /Founder &amp; International Market Development Lead/);
