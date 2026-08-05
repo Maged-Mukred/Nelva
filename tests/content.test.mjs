@@ -68,7 +68,7 @@ test("preserves the Contact page without unverified channels", async () => {
   assert.match(source, /Discuss a Market &amp; Channel Readiness Assessment/);
   assert.match(source, /Confidential information is not required/);
   assert.match(source, /Business ID: 3574517-6/);
-  assert.match(source, /verified business channel will be published here/i);
+  assert.match(source, /partnerships@nelvaglobal\.com/i);
   assert.doesNotMatch(source, /mailto:|contact@nelvaglobal\.com|<form/i);
 });
 
