@@ -20,7 +20,7 @@ test("preserves the approved Homepage positioning and routes", async () => {
   assert.match(source, /Based in Espoo, Finland/);
   assert.match(source, /Manufacturer Representation/);
   assert.match(source, /Technical & Commercial Coordination/);
-  assert.match(source, /Payment Technology represents Nelva/);
+  assert.match(source, /Payment Technology is Nelva/);
   assert.match(source, /Business ID: 3574517-6/);
 
   for (const route of ["/company", "/capabilities", "/industries", "/contact"]) {
