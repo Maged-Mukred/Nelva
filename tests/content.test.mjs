@@ -44,7 +44,7 @@ test("preserves the approved capability boundaries", async () => {
 
 test("preserves the approved Industries positioning", async () => {
   const source = await page("industries");
-  assert.match(source, /market-development framework/i);
+  assert.match(source, /The sector changes\. The commercial discipline remains\./);
   assert.match(source, /structured market intelligence/);
   assert.match(source, /Payment Technology is Nelva/);
   assert.match(source, /Android payment terminals/);
