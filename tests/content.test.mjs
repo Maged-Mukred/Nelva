@@ -37,7 +37,7 @@ test("preserves the approved capability boundaries", async () => {
   assert.match(source, /Capabilities for better market and channel decisions/);
   assert.match(source, /Manufacturer Representation/);
   assert.match(source, /Current capability/);
-  assert.match(source, /does not automatically include exclusivity/);
+  assert.match(source, /does not automatically include\s+exclusivity/);
   assert.match(source, /does not perform complete technical integrations/);
   assert.match(source, /does not guarantee sales, contracts, or successful market entry/);
 });
