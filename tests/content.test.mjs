@@ -56,7 +56,7 @@ test("preserves the approved Industries positioning", async () => {
 test("preserves the Company foundation and founder information", async () => {
   const source = await page("company");
   assert.match(source, /specialized international market development company/i);
-  assert.match(source, /A new business built on more than ten years of professional experience/);
+  assert.match(source, /A new business built on more than ten years of relevant professional experience/);
   assert.match(source, /The business itself has not operated for more than ten years/);
   assert.match(source, /Maged Mukred/);
   assert.match(source, /Founder &amp; International Market Development Lead/);
