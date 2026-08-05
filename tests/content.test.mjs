@@ -65,7 +65,7 @@ test("preserves the Company foundation and founder information", async () => {
 
 test("preserves the Contact page without unverified channels", async () => {
   const source = await page("contact");
-  assert.match(source, /Start with the market objective/);
+  assert.match(source, /Discuss a Market &amp; Channel Readiness Assessment/);
   assert.match(source, /Confidential information is not required/);
   assert.match(source, /Business ID: 3574517-6/);
   assert.match(source, /verified business channel will be published here/i);
