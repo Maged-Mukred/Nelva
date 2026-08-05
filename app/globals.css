@@ -207,7 +207,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   z-index: 0;
   inset: var(--header-height) 0 0;
   pointer-events: none;
-  background-image: linear-gradient(to right, transparent calc(100% - 1px), rgba(16,17,18,.055) 1px);
+background-image: linear-gradient(to right, transparent calc(100% - 1px), rgba(16,17,18,.035) 1px);
   background-size: calc(100% / 12) 100%;
 }
 
@@ -246,7 +246,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-copy {
   grid-column: 5 / span 7;
   align-self: end;
-  padding-top: 26px;
+  padding-top: 32px;
   border-top: 1px solid var(--ink);
 }
 
@@ -305,8 +305,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .hero-proof span {
-  min-height: 54px;
-  padding: 17px 15px;
+  min-height: 48px;
+  padding: 14px 15px;
   border-right: 1px solid var(--line);
 }
 
